@@ -1,2 +1,0 @@
-# egehurturk.com
----

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ege Hurturk — undergraduate at Imperial College London, interested in high-performance computing, distributed systems, and music.">
+  <meta property="og:title" content="Ege's page">
+  <meta property="og:description" content="Undergraduate at Imperial College London — HPC, distributed systems, deep learning, and music.">
+  <meta property="og:image" content="assets/portrait.jpg">
+  <meta property="og:type" content="website">
+  <title>Ege's page</title>
+
+  <!-- Favicon: letter E in serif -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='Georgia,serif' fill='%231a1a1a'>E</text></svg>">
+
+  <!-- Latin Modern Roman — preload the regular weight for performance -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/latex.css/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+
+    <h1>Ege's page</h1>
+    <hr class="title-rule">
+
+    <!-- ── Intro ─────────────────────────────────────────────────────── -->
+    <section id="intro" aria-label="Introduction">
+      <div class="intro-grid">
+
+        <div class="intro-prose">
+          <p><strong>Hi, I'm Ege.</strong> I'm a Computing undergraduate at <strong>Imperial College London</strong>,
+          on track for a Bachelor of Engineering, graduating in 2027.</p>
+
+          <p>I'm into <strong>high-performance computing, distributed systems, deep learning, physics, and music</strong>.
+
+            <br>
+
+            <br>
+          This summer I'll be <strong>working at Bloomberg</strong> as a <em>Software Engineer Intern</em> in London. 
+          
+          <br>
+          <br>
+          Long-term, I want to work
+          on systems that sit at the intersection of performance engineering and Deep Learning. If that
+          doesn't pan out, plan B is to be Miles Davis 2.0.</p>
+
+          <p>Outside of work, I play <i>lead guitar</i> in a band called <strong>Red Rosary</strong>, more on that below.</p>
+
+          <p class="contact">Reach me at <a href="mailto:ege.hurturk24@imperial.ac.uk">ege.hurturk24@imperial.ac.uk</a>.
+          <br>
+          <br>
+            Here's my <a href="https://github.com/egehurturk">GitHub</a>,
+          <a href="https://www.linkedin.com/in/ege-hurturk/">LinkedIn</a>, and my <a href="assets/Resume.pdf">resume</a>.</p>
+        </div>
+
+        <div class="intro-photo">
+          <!-- Drop your portrait photo here: save it as assets/portrait.jpg and update the src below -->
+          <img src="assets/profile.jpg" alt="Portrait of Ege Hurturk" class="portrait">
+          <p class="photo-caption">Me visiting close friends in New York; one of the best trips of my life.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- ── Interests ─────────────────────────────────────────────────── -->
+    <section id="interests">
+      <h2>What I'm Into</h2>
+
+      <p>I am interested in designing high-performance pipelines and machine learning systems. Low-latency design patterns, data structures,
+      and the discipline of dealing with cryptic C++ errors
+      are among my favorite topics to work on and learn. Alongside that, I am increasingly interested in graph neural networks and their applications across fields. Everything is kinda a graph nowadays.</p>
+
+      <br>
+      <p>Outside of code, I spend time learning music theory and the architecture of progressive metal
+      and jazz fusion. I listen to a lot of jazz. My favorite piece is <it>"In A Silent Way"</it> by Miles Davis. Give a listen. 
+      <br>
+      <br>
+      Beyond music, I am nearly always physically challenging myself: long runs, hiking, tennis, football, and regular lifting. I believe gym boosts my productivity and cognitive thinking a lot, whenever I go gym I leave
+      accomplished, rejuvenated, and more focused. Locked IN.
+      <br>
+      <br>
+      As Mustafa Kemal Ataturk says, </p>
+    <blockquote style="color:#666;font-style:italic;display:flex;align-items:center;gap:0.5rem;">
+      <span aria-hidden="true" style="font-size:2.4rem;line-height:1">“</span>
+      <span>A sound mind in a sound body</span>
+      <span aria-hidden="true" style="font-size:2.4rem;line-height:1">”</span>
+    </blockquote>
+    </section>
+
+    <hr>
+
+    <!-- ── Projects ──────────────────────────────────────────────────── -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Ege: paste your project list here, format: <li><strong>Name</strong><ul><li>description</li></ul></li> -->
+      <ul>
+        <li><strong>WACC</strong> (No one knows what it stands for)
+          <img src="assets/wacc.svg" alt="WACC compiler pipeline diagram" style="width:100%;margin-top:.75rem;">
+          <ul>
+            <li>A full pipeline compiler built in Scala 3 as part of the second year Compilers laboratory at Imperial.</li>
+            <li>Multiphase architecture: see above diagram.</li>
+            <li>Many optimisations: Local static analyser, tail-recursion optimiser, and a peephole optimiser. Details in my <a href="assets/Resume.pdf">resume</a>.</li>
+          </ul>
+          
+        </li>
+        <li><strong>PintOS</strong>
+          <img src="assets/pintos1.svg" alt="PintOS priority inversion problem example" style="width:100%;margin-top:.75rem;">
+          <ul>
+            <li>Developed core operating system functionality including preemptive scheduling, user process support, and virtual memory management. Details in my <a href="assets/Resume.pdf">resume</a>.</li>
+           <li>Working with multithreading while designing & building an OS is a hell of a challenge, learned many lessons about preemption and writing race-free code in C.</li>
+          </ul>
+        </li>
+        <li><strong>TSNet</strong>
+          <ul>
+            <img src="assets/architecture2.png" alt="WaveNet architecture" style="width:70%;margin-top:.75rem;">
+            <li>Trained a WaveNet model with my own dataset (I collected using my own Boss Katana amplifier and Shure SM57 mic!). Details on my <a href="assets/Resume.pdf">resume</a>.</li>
+            <li>Used my own trained model as a replacement for my physical Tube Screamer mini pedal! The best feeling in the world is to actually use your creation, even though it's not the best one.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <hr>
+
+    
+
+    <!-- ── Red Rosary ─────────────────────────────────────────────────── -->
+    <section id="band">
+      <h2>Red Rosary</h2>
+      <p>I play lead guitar in Red Rosary, a rock band based in London. We cover 80s, 90s, and 00s rock,
+      metal, and alternative and we are currently writing our
+      first album. The lead single is <strong>"Waiting for You."</strong></p> I have another banger on the way.
+
+      <h3>Live Shows</h3>
+      <ul>
+        <li>Live at <strong>O2 Academy Islington</strong></li>
+        <li>Live at <strong>The Castle</strong>, Aldgate East</li>
+      </ul>
+
+      <div class="show-grid">
+        <!-- O2 Academy Islington show — replace with assets/show-1.jpg and update src -->
+        <img src="assets/rr1.jpg" alt="Red Rosary live at O2 Academy Islington">
+        <!-- The Castle, Aldgate East show — replace with assets/show-2.jpg and update src -->
+        <img src="assets/rr2.jpg" alt="Red Rosary live at The Castle, Aldgate East">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- ── Travel ─────────────────────────────────────────────────────── -->
+    <section id="travel">
+      <h2>Where I Want to Go in 2027</h2>
+      <ul>
+        <li>Morocco</li>
+        <li>Brazil</li>
+        <li>Japan</li>
+        <li>Mt. Kilimanjaro</li>
+        <li>Ka&#231;kar Mountains</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- ── Albums ─────────────────────────────────────────────────────── -->
+    <section id="albums">
+      <h2>My Favorite Albums</h2>
+      <ul>
+        <li>The Dark Side of the Moon  &#8212; <em>Pink Floyd</em></li>
+        <li>A Love Supreme  &#8212; <em>John Coltrane</em></li>
+        <li>Kind of Blue  &#8212; <em>Miles Davis</em></li>
+        <li>In Rainbows  &#8212; <em>Radiohead</em> </li>
+        <li>Metropolis Pt. 2  &#8212; <em>Dream Theather</em> </li>
+      </ul>
+    </section>
+
+     <hr>
+
+    <!-- ── Albums ─────────────────────────────────────────────────────── -->
+    <section id="pictures">
+      <h2>A Few Favorite Pictures</h2>
+       <div class="show-grid">
+        <!-- O2 Academy Islington show — replace with assets/show-1.jpg and update src -->
+        <img src="assets/bodrum.jpg" alt="A photo of Bodrum">
+        <p class="photo-caption">Bodrum, no filter. Best place on Earth.</p>
+        <!-- The Castle, Aldgate East show — replace with assets/show-2.jpg and update src -->
+        <img src="assets/denhaag.jpg" alt="Me and my friends at Den Haag">
+        <p class="photo-caption">Visiting my friend at Delft.</p>
+        <img src="assets/gs.jpg" alt="GS championship">
+        <p class="photo-caption">When Galatasaray won the Turkish League and got its 4th star.</p>
+        <img src="assets/hike.jpg" alt="Hike to Lake District">
+        <p class="photo-caption">Hiking in Lake District, Fairfield horseshoe. First hike, was amazing.</p>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
